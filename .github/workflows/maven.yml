@@ -29,3 +29,5 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag github-cicd-action:$(date +%s)
