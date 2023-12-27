@@ -36,7 +36,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: satish/github-cicd-action
+        image: satish2121/github-cicd-action
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
